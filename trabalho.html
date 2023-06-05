@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cadastros.js">
+    <title>Cadastro de Tarefas/Atividades</title>
+    <style>
+        #tarefas-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Tarefas/Atividades</h1>
+
+    <form id="cadastro-form">
+        <label for="nome-docente">Nome Docente:</label>
+        <input type="text" id="nome-docente" required><br>
+
+        <label for="carga-horaria">Carga Horária:</label>
+        <input type="number" id="carga-horaria" required><br>
+
+        <label for="atividade">Atividade:</label>
+        <input type="text" id="atividade" required><br>
+
+        <label for="dia-semana">Dia da Semana:</label>
+        <select id="dia-semana" required>
+            <option value="">Selecione</option>
+            <option value="Segunda">Segunda</option>
+            <option value="Terça">Terça</option>
+            <option value="Quarta">Quarta</option>
+            <option value="Quinta">Quinta</option>
+            <option value="Sexta">Sexta</option>
+        </select><br>
+
+        <label for="horario">Horário:</label>
+        <input type="text" id="horario" placeholder="Ex: 08:00-10:00" required><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <div id="tarefas-list">
+        <h2>Tarefas Cadastradas</h2>
+        <ul id="tarefas-ul"></ul>
+    </div>
+</body>
+</html>
